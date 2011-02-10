@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @peep.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @peep.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_peep_path(@peep) %> |
+<%= link_to 'Back', peeps_path %>
