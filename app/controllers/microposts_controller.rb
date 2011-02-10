@@ -2,7 +2,7 @@ class MicropostsController < ApplicationController
   # GET /microposts
   # GET /microposts.xml
   def index
-    @microposts = Micropost.all
+    @microposts = Micropost.paginate(:page => params[:page], :per_page => 10)
 
     respond_to do |format|
       format.html # index.html.erb

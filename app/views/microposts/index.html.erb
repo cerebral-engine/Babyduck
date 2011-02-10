@@ -9,6 +9,7 @@
     <th></th>
   </tr>
 
+<%= will_paginate %>
 <% @microposts.each do |micropost| %>
   <tr>
     <td><%= micropost.comment %></td>
@@ -18,6 +19,7 @@
     <td><%= link_to 'Destroy', micropost, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
+<%= will_paginate %>
 </table>
 
 <br />
