@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20110209230110) do
 
   create_table "microposts", :force => true do |t|
     t.string   "comment"
-    t.integer  "user_id"
+    t.integer  "peep_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
